@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Jeeh Cortes</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <meta name="description" content="Barbearia Jeeh Cortes - cortes na régua, barba na navalha e estilo de verdade. Agende seu corte agora!">
+<meta name="keywords" content="Barbearia, Corte Masculino, Salto, Jeeh Cortes, Corte na régua">
+<meta name="author" content="Pablo Bortolucci">
+
+</head>
+ <body>  
+  <header>
+    <div class="logo-container">
+      <img src="src/img/logo-barbearia.png" alt="Logo da Barbearia">
+      <span class="titulo-barbearia">Barbearia Jeeh Cortes</span>
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>  
+  <section id="hero" class="container reveal">
+    <img src="src/img/jeeh-img.jpg" alt="Jeeh cortando o cabelo" class="bg-img-check">
+    <div class="hero-content">
+      <h2>Corte na régua, estilo de verdade</h2>
+      <p>Agende seu horário e transforme seu visual!</p>
+      <a href="https://sites.appbarber.com.br/link/9448729/jeehcorttes-4ccq" target="_blank" class="botao-agendar">💼 Agendar agora</a>
+    </div>
+  </section> 
+   <section id="sobre" class="container reveal">
+    <h2>Sobre a Barbearia</h2>
+    <p>Com anos de experiência, oferecemos cortes modernos, barba na navalha e aquele atendimento resenha.</p>
+  </section>  <section id="servicos" class="container reveal">
+    <h2>Serviços</h2>
+    <ul>
+      <li> Corte</li>
+      <li>️ Barba Completa</li>
+      <li>️ Sobrancelha</li>
+      <li> Pigmentação</li>
+      <li> Luzes</li>
+    </ul>
+  </section>  <section id="galeria" class="container reveal">
+    <h2>Galeria</h2>
+    <p>Veja alguns cortes feitos por aqui:</p>
+    <div class="fotos">
+      <img src="src/img-2/corte1.jpg" alt="Corte 1">
+      <img src="src/img-2/corte2.jpg" alt="Corte 2">
+      <img src="src/img-2/corte3.jpg" alt="Corte 3">
+    </div>
+  </section>  
+   <section id="contato" class="container reveal">
+    <h2>Agende seu horário</h2>
+    <p>Agendamento rápido e fácil pelo app:</p>
+    <a href="https://sites.appbarber.com.br/link/9448729/jeehcorttes-4ccq" target="_blank" class="btn-agendar">💼 Agende seu corte</a><p style="margin-top: 20px;">📍 Rua São Tiago, 461 - Jardim São Judas Tadeu, Salto/SP</p>
+<p> instagram: <a href="https://www.instagram.com/jeeh_corttes?igsh=MWh6NDF6Mmlsa3RzNA==" target="_blank">@jeeh_corttes</a></p>
+
+  </section>
+  <footer>
+    <p>&copy; 2025 Barbearia Jeeh Cortes - Todos os direitos reservados</p>
+  </footer>  
+  <a href="#" class="topo-btn">⬆️</a>
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    function animateOnScroll() {
+      reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 150;
+
+        if (revealTop < windowHeight - revealPoint) {
+          el.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', animateOnScroll);
+    window.addEventListener('load', animateOnScroll);
+  </script>
+  
+ </body>
+</html>
